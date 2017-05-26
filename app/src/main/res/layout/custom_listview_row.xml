@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detail_id"
+   >
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingTop="10dp"
+       android:paddingLeft="10dp"
+       android:weightSum="2">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Talktime :"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:id="@+id/talktime"
+        android:textColor="@android:color/black"
+
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="10dp"
+        android:id="@+id/validity"
+        android:textColor="@color/material_grey_600"
+        android:text="Validity : "/>
+
+
+   </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:gravity="right"
+           android:visibility="invisible"
+           android:paddingRight="25dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right|center_vertical"
+    android:text="R "
+    android:id="@+id/amt"
+    android:background="@drawable/button_color"
+    android:textSize="10dp"
+    android:layout_margin="5dp"
+    android:padding="8dp"
+
+    />
+</LinearLayout>
+   </LinearLayout>
+
+
+</LinearLayout>

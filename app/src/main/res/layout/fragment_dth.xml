@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rakshit.paymon.Fragment.DthFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dth_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:paddingTop="50dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/dth_card"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:maxLength="12"
+
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Dth Number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dth_amt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/dth_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+
+                android:singleLine="true"
+                android:hint="Amount" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Button android:id="@+id/btn_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay"
+
+                android:background="@android:color/holo_blue_bright"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</FrameLayout>
